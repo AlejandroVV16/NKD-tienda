@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moto Pereira - Tienda de Partes para Motos</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <!-- Enlace a los estilos específicos de accesorios -->
+    <link rel="stylesheet" href="../src/css/accesorios.css">
+    <!-- Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabecera del sitio -->
+    <header>
+        <div class="header-container">
+            <!-- Logo de la tienda -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../assets/images/logo.png" alt="Moto Pereira">
+                </a>
+            </div>
+            
+            <!-- Barra de búsqueda -->
+            <div class="search-bar">
+                <form action="busqueda.html" method="GET">
+                    <input type="text" placeholder="Buscar artículo" name="query">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Icono de usuario/cuenta -->
+            <div class="user-account">
+                <a href="mi-cuenta.html">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Menú de navegación principal -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="productos-nuevos.html">Productos Nuevos</a></li>
+                <li><a href="quienes-somos.html">Quienes somos</a></li>
+                <li><a href="revision.html">Revisión</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+        <!-- Contenedor principal donde se cargarán las vistas SPA -->
+    <main id="main-content">
+        <!-- El contenido se cargará dinámicamente por JavaScript -->
+    </main>
+
+    <!-- Banner principal -->
+    <section class="hero-banner">
+        <div class="banner-content">
+            <h1>Encuentra la pieza perfecta para tu moto</h1>
+            <a href="catalogo.html" class="btn">Más información</a>
+        </div>
+    </section>
+    
+    <!-- Sección de categorías populares -->
+    <section class="categories-section">
+        <h2>Categorías populares</h2>
+        <div class="categories-grid">
+            <!-- Categoría Frenos -->
+            <a href="categoria-frenos.html" class="category-card">
+                <div class="category-icon">
+                    <img src="../assets/images/freno-de-disco (1).png" alt="Frenos">
+                </div>
+                <div class="category-name">Frenos</div>
+            </a>
+            
+            <!-- Categoría Motor -->
+            <a href="categoria-motor.html" class="category-card">
+                <div class="category-icon">
+                    <img src="../assets/images/ajustes-de-engranajes.png" alt="Motor">
+                </div>
+                <div class="category-name">Motor</div>
+            </a>
+            
+            <!-- Categoría Eléctrico -->
+            <a href="categoria-electrico.html" class="category-card">
+                <div class="category-icon">
+                    <img src="../assets/images/rayo.png" alt="Eléctrico">
+                </div>
+                <div class="category-name">Eléctrico</div>
+            </a>
+            
+            <!-- Categoría Revisión -->
+            <a href="categoria-revision.html" class="category-card">
+                <div class="category-icon">
+                    <img src="../assets/images/llave-inglesa.png" alt="Revisión">
+                </div>
+                <div class="category-name">Revisión</div>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Sección de modelos más buscados -->
+    <section class="models-section">
+        <h2>Modelos más buscados</h2>
+        <div class="models-grid">
+            <a href="acelerador-4.html" class="model-item">Acelerador de 4</a>
+            <a href="freno-blindado.html" class="model-item">Freno Blindado</a>
+            <a href="cascos.html" class="model-item">Cascos</a>
+            <a href="bujia-iridium.html" class="model-item">Bujía de Iridium</a>
+        </div>
+    </section>
+    
+    <!-- Sección de ofertas -->
+    <section class="offers-section">
+        <h2>Ofertas del mes</h2>
+        <div class="products-grid">
+            <!-- Producto 1: Sillones -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../assets/images/sillas.png" alt="Sillones">
+                </div>
+                <div class="product-info">
+                    <h3>Sillones</h3>
+                    <p class="price">$175.000</p>
+                    <button class="add-to-cart" data-id="1" data-name="Sillones" data-price="175000">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Producto 2: Aceite Castrol -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../assets/images/castrol.png" alt="Aceite Castrol">
+                </div>
+                <div class="product-info">
+                    <h3>Aceite Castrol</h3>
+                    <p class="price">$38.000</p>
+                    <button class="add-to-cart" data-id="2" data-name="Aceite Castrol" data-price="38000">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Producto 3: Kit kontroler 160 CC -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../assets/images/kit control.png" alt="Kit kontroler 160 CC">
+                </div>
+                <div class="product-info">
+                    <h3>Kit kontroler 160 CC</h3>
+                    <p class="price">$185.000</p>
+                    <button class="add-to-cart" data-id="3" data-name="Kit kontroler 160 CC" data-price="185000">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Producto 4: Cascos -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../assets/images/cascos.png" alt="Cascos">
+                </div>
+                <div class="product-info">
+                    <h3>Cascos</h3>
+                    <p class="price">$115.000</p>
+                    <button class="add-to-cart" data-id="4" data-name="Cascos" data-price="115000">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- (pie de página) -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Enlaces de interés</h3>
+                <ul>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="mailto:info@motopereira.com">Correo</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Políticas de privacidad</h3>
+                <ul>
+                    <li><a href="politicas.html">Políticas</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/app.js"></script>
+</body>
+</html>
